@@ -9,5 +9,9 @@ public class SetPlayerName : MonoBehaviour
     {
         if (setNameInputField == null) return;
         PlayerPrefs.SetString("Name", setNameInputField.text);
+        if (GameManager.Instance.PlayerName.text != PlayerPrefs.GetString("Name"))
+        {
+            GameManager.Instance.PlayerName.text = PlayerPrefs.GetString("Name");
+        }
     }
 }

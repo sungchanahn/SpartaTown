@@ -9,6 +9,10 @@ public class StartManager : MonoBehaviour
 
     private void Start()
     {
+        if (!PlayerPrefs.HasKey("SelectedCharacter"))
+        {
+            PlayerPrefs.SetInt("SelectedCharacter", 0);
+        }
         SelectedCharacterUI = CharacterUI[PlayerPrefs.GetInt("SelectedCharacter", 0)];
         SelectedCharacterUI.SetActive(true);
     }

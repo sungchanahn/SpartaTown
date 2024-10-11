@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SelectButton : MonoBehaviour
+public class SelectCharacterButton : MonoBehaviour
 {
     public void SelectCharacter(int _index)
     {

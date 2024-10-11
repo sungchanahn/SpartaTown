@@ -271,13 +271,13 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 45486515}
-        m_TargetAssemblyTypeName: SelectionManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: SelectButton, Assembly-CSharp
         m_MethodName: SelectCharacter
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -294,7 +294,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e4fe5f62f45e024e898edf7e70e2fba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 1
 --- !u!1 &246933808
 GameObject:
   m_ObjectHideFlags: 0
@@ -1430,9 +1429,9 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1387931973}
-        m_TargetAssemblyTypeName: SelectionManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: SelectButton, Assembly-CSharp
         m_MethodName: SelectCharacter
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1453,7 +1452,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e4fe5f62f45e024e898edf7e70e2fba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 0
 --- !u!1 &1522858936
 GameObject:
   m_ObjectHideFlags: 0
@@ -1934,7 +1932,7 @@ GameObject:
   - component: {fileID: 1660510071}
   - component: {fileID: 1660510070}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2092,11 +2090,11 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 404725843}
   - {fileID: 1660510069}
   - {fileID: 1613548901}
   - {fileID: 2003470940}
   - {fileID: 246933809}
+  - {fileID: 404725843}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

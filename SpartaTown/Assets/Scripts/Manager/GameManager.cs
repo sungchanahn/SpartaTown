@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     public GameObject[] CharacterPrefabs;
     public GameObject player;
+    public Transform SpawnPoint;
     public Vector2 CurrentPlayerPosition;
 
     private void Awake()
@@ -19,6 +20,6 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        player = Instantiate(CharacterPrefabs[0]);
+        player = Instantiate(CharacterPrefabs[PlayerPrefs.GetInt("SelectedCharacter", 0)], SpawnPoint);
     }
 }

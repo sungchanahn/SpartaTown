@@ -8,8 +8,8 @@ public class MainCameraController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (GameManager.Instance.player.transform == null) return;
-        Vector3 targetPos = new Vector3(GameManager.Instance.player.transform.position.x, GameManager.Instance.player.transform.position.y, transform.position.z);
+        if (GameManager.Instance.Player.transform == null) return;
+        Vector3 targetPos = new Vector3(GameManager.Instance.Player.transform.position.x, GameManager.Instance.Player.transform.position.y, transform.position.z);
         transform.position = Vector3.Lerp(transform.position, targetPos, smoothing);
     }
 }

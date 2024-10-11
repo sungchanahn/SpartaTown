@@ -7772,9 +7772,10 @@ MonoBehaviour:
   CharacterPrefabs:
   - {fileID: 8425534598506288726, guid: 1c53ea0a388644e49806911526ce9bed, type: 3}
   - {fileID: 4649347680975678574, guid: 7c2aa1bafdf193846abb1c99b395b627, type: 3}
-  player: {fileID: 0}
+  Player: {fileID: 0}
   SpawnPoint: {fileID: 1921536940}
   CurrentPlayerPosition: {x: 0, y: 0}
+  PlayerName: {fileID: 0}
 --- !u!1 &1390076589
 GameObject:
   m_ObjectHideFlags: 0
@@ -19648,5 +19649,5 @@ SceneRoots:
   - {fileID: 2035627289}
   - {fileID: 1778441858}
   - {fileID: 1225165241}
-  - {fileID: 1867841415}
   - {fileID: 1921536940}
+  - {fileID: 1867841415}

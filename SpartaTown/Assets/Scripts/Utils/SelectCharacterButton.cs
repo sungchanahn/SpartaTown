@@ -6,4 +6,9 @@ public class SelectCharacterButton : MonoBehaviour
     {
         PlayerPrefs.SetInt("SelectedCharacter", _index);
     }
+
+    public void ChangeCharacter()
+    {
+        GameManager.Instance.ChangeCharacter();
+    }
 }

@@ -13,7 +13,7 @@ public class StartManager : MonoBehaviour
         {
             PlayerPrefs.SetInt("SelectedCharacter", 0);
         }
-        SelectedCharacterUI = CharacterUI[PlayerPrefs.GetInt("SelectedCharacter", 0)];
+        SelectedCharacterUI = CharacterUI[PlayerPrefs.GetInt("SelectedCharacter")];
         SelectedCharacterUI.SetActive(true);
     }
 }

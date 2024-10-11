@@ -5,7 +5,7 @@ public class JoinButton : MonoBehaviour
 {
     public void Join()
     {
-        if (PlayerPrefs.GetString("Name").Length >= 2 && PlayerPrefs.GetString("Name").Length <= 10)
+        if (PlayerPrefs.HasKey("Name"))
         {
             SceneManager.LoadScene("MainScene");
         }

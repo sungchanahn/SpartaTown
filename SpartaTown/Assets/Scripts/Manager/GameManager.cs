@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public GameObject[] CharacterPrefabs;
     [HideInInspector] public GameObject Player;
 
-    public Transform SpawnPoint;
+    public GameObject SpawnPoint;
     [HideInInspector] public Vector3 CurrentPlayerPosition;
 
     public TMP_Text PlayerName;
@@ -27,7 +27,8 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        Player = Instantiate(CharacterPrefabs[PlayerPrefs.GetInt("SelectedCharacter")], SpawnPoint.position, Quaternion.identity);
+        Player = Instantiate(CharacterPrefabs[PlayerPrefs.GetInt("SelectedCharacter")],
+                             SpawnPoint.transform.position, Quaternion.identity, SpawnPoint.transform);
         PlayerName = Player.GetComponentInChildren<TMP_Text>();
         PlayerName.text = PlayerPrefs.GetString("Name");
         Time.timeScale = 1.0f;
@@ -42,7 +43,8 @@ public class GameManager : MonoBehaviour
     {
         CurrentPlayerPosition = Player.transform.position;
         Destroy(Player);
-        Player = Instantiate(CharacterPrefabs[PlayerPrefs.GetInt("SelectedCharacter")], CurrentPlayerPosition, Quaternion.identity);
+        Player = Instantiate(CharacterPrefabs[PlayerPrefs.GetInt("SelectedCharacter")],
+                             CurrentPlayerPosition, Quaternion.identity, SpawnPoint.transform);
         PlayerName = Player.GetComponentInChildren<TMP_Text>();
         PlayerName.text = PlayerPrefs.GetString("Name");
     }

@@ -24,8 +24,10 @@ Assets - Scripts - Entities에 있는 스크립트를 이용해 아래의 기능
 	- 카메라 따라가기
 
 - 기능 2. 캐릭터 선택 및 이름 설정 (StartScene)   
-이름을 설정하지 않고 Join을 누르거나 이름이 2~10글자가 아니면 안내문구가 3초 동안 강조(빨간 글씨)됩니다. (Script - Utils - AlertNameSetting.cs, Script - Utils - Button - SetPlayerName.cs, JoinButton.cs)   
-캐릭터는 펭귄 Penguin, 우주 비행사 Astronaut 중 하나를 선택할 수 있습니다. 선택한 캐릭터 이미지가 바로 반영됩니다.(Script - Utils - Button - SelectCharacterButton.cs)
+이름을 설정하지 않고 Join을 누르거나 이름이 2~10글자가 아니면 안내문구가 3초 동안 강조(빨간 글씨)됩니다.   
+(Script - Utils - AlertNameSetting.cs, Script - Utils - Button - SetPlayerName.cs, JoinButton.cs)   
+캐릭터는 펭귄 Penguin, 우주 비행사 Astronaut 중 하나를 선택할 수 있습니다. 선택한 캐릭터 이미지가 바로 반영됩니다.   
+(Script - Utils - Button - SelectCharacterButton.cs)   
 ![StartScene](https://github.com/user-attachments/assets/e85b42ef-a4b1-4e67-a06c-817c1f2b1b24)   
 ![StartScene2](https://github.com/user-attachments/assets/852f20fc-5586-4b8e-a3b2-fb95d4452802)   
 ![SelectCharacter](https://github.com/user-attachments/assets/f75583e1-b515-4295-8ddc-5aa9bfefcad5)   

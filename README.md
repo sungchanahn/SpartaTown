@@ -46,7 +46,7 @@ MainScene에서는 이름 변경, 캐릭터 변경, 참여자 목록 UI를 관�
 인게임에서 캐릭터를 변경할 수 있습니다.
 ![IngameChangeCharacter](https://github.com/user-attachments/assets/56dfc869-c9ed-491a-85b6-5f22f1bc60e8)   
 ![Character](https://github.com/user-attachments/assets/48bc53e1-0225-4824-9fe9-27ffd1cab564)
-![ChangeNameCharacter](https://github.com/user-attachments/assets/f67f2c6a-e6b7-4116-89cb-544d2fb2c579)   
+![ChangeNameCharacter](https://github.com/user-attachments/assets/33590172-80eb-431f-b2f3-071259ccb0a1)   
 이름 변경 및 캐릭터 변경이 반영된 모습
    - 참여자 목록   
 NPC와 Player의 목록이 표시됩니다. 이름을 변경하면 참여자 목록에도 바로 반영됩니다.   

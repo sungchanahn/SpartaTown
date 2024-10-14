@@ -6,11 +6,11 @@ public class HoldInputSystemButton : UIManager
     {
         if (SelectedUI.activeSelf)
         {
-            Time.timeScale = 0.0f;
+            GameManager.Instance.IsPlaying = false;
         }
         else
         {
-            Time.timeScale = 1.0f;
+            GameManager.Instance.IsPlaying = true;
         }
     }
 }

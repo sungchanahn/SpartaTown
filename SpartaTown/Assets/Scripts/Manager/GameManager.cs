@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     public TMP_Text PlayerName;
     [SerializeField] private TMP_Text timeText;
 
+    public bool IsPlaying;
+
     private void Awake()
     {
         if (Instance == null)
@@ -32,6 +34,7 @@ public class GameManager : MonoBehaviour
         PlayerName = Player.GetComponentInChildren<TMP_Text>();
         PlayerName.text = PlayerPrefs.GetString("Name");
         Time.timeScale = 1.0f;
+        IsPlaying = true;
     }
 
     private void Update()

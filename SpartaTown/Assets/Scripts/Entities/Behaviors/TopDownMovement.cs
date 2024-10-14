@@ -32,7 +32,14 @@ public class TopDownMovement : MonoBehaviour
 
     private void ApplyMovement(Vector2 direction)
     {
-        direction = direction * 5f;
-        movementRigidbody.velocity = direction;
+        if (GameManager.Instance.IsPlaying)
+        {
+            direction = direction * 5f;
+            movementRigidbody.velocity = direction;
+        }
+        else
+        {
+            movementRigidbody.velocity = Vector2.zero;
+        }
     }
 }
